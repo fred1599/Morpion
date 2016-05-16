@@ -29,7 +29,7 @@ def is_winner_line(table, line):
 def is_winner_column(table, column):
     """test winner for one column of table"""
     column = tuple((line[column] for line in table))
-    if column == WINNER_P1 or column is WINNER_P2:
+    if column == WINNER_P1 or column == WINNER_P2:
         return True
     return False
     
